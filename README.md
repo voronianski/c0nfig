@@ -10,8 +10,6 @@
 npm install c0nfig --save
 ```
 
-### [Get Started](https://github.com/voronianski/node-config-boilerplate#get-started)
-
 ---
 
 **MIT Licensed**
