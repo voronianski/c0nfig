@@ -1,0 +1,25 @@
+{
+  "name": "c0nfig",
+  "version": "0.1.0",
+  "description": "require local configs as if it's node_modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voronianski/c0nfig.git"
+  },
+  "keywords": [
+    "config",
+    "node_modules",
+    "local",
+    "require"
+  ],
+  "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voronianski/c0nfig/issues"
+  },
+  "homepage": "https://github.com/voronianski/c0nfig#readme"
+}
