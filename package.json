@@ -1,12 +1,11 @@
 {
   "name": "c0nfig",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "require local configs as if it's node_modules",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/index.js --out-file index.js",
-    "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/config.js --out-file index.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",

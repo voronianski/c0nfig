@@ -5,8 +5,20 @@ import production from '../../config/production.config';
 import staging from '../../config/staging.config';
 
 let configs = { development, staging, production };
-let config = populateEachConfig(configs[env]);
+let config = configs[env];
 config.env = env;
+
+populateEachConfig(config);
+
+function replaceTemplateTags (key) {
+    if (!key.length) {
+        return config;
+    }
+    if (!Array.isArray(key)) {
+        return replaceTemplateTags(key.split('.'));
+    }
+    return key.reduce((result, i) => result && result[i], config);
+}
 
 function coerce (value) {
     if (typeof value !== 'string') {
@@ -26,22 +38,12 @@ function coerce (value) {
 }
 
 function populateEachConfig (cfg) {
-    return Object.keys(cfg).map(key => {
+    Object.keys(cfg).forEach(key => {
         if (typeof cfg[key] === 'object' && cfg[key]) {
             return populateEachConfig(cfg[key]);
         }
         cfg[key] = coerce(cfg[key]);
     });
-}
-
-function replaceTemplateTags (key) {
-    if (!key.length) {
-        return config;
-    }
-    if (!Array.isArray(key)) {
-        return replaceTemplateTags(key.split('.'));
-    }
-    return key.reduce((result, i) => result && result[i], config);
 }
 
 export default config;
