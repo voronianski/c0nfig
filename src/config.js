@@ -1,13 +1,10 @@
 const env = process.env.NODE_ENV || 'development';
 
-import development from '../../config/development.config';
-import production from '../../config/production.config';
-import staging from '../../config/staging.config';
+var util = require('util');
+var fileName = util.format('%s.config.js', env);
+var config = require('../../config/' + fileName);
 
-let configs = { development, staging, production };
-let config = configs[env];
 config.env = env;
-
 populateEachConfig(config);
 
 function replaceTemplateTags (key) {
