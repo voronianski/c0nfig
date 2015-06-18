@@ -1,6 +1,6 @@
 {
   "name": "c0nfig",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "require local configs as if it's node_modules",
   "main": "index.js",
   "scripts": {
