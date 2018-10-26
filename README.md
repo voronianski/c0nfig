@@ -45,7 +45,15 @@ Start your app with proper `NODE_ENV` (if not provided it will grab `development
 
 ```js
 // src/app.js
-const config = require('c0nfig');
+import config from 'c0nfig';
+import request from 'superagent';
+
+request.get(config.apiUrl).then(res => { ... });
+```
+
+```js
+// src/app.js
+const config = require('c0nfig').default;
 const request = require('superagent');
 
 request.get(config.apiUrl).then(res => { ... });

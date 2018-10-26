@@ -1,6 +1,6 @@
 {
   "name": "c0nfig",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "require local configs as if it's node_modules",
   "main": "./index.js",
   "scripts": {
@@ -39,7 +39,6 @@
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
-    "babel-plugin-add-module-exports": "^1.0.0",
     "husky": "^1.1.2",
     "prettier": "^1.14.3",
     "pretty-quick": "^1.8.0"
