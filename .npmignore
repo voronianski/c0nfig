@@ -1,6 +1,5 @@
 src
-README.md
 .babelrc
 .editorconfig
 
-!index.js
+!lib/index.js

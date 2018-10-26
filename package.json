@@ -2,9 +2,9 @@
   "name": "c0nfig",
   "version": "1.0.3",
   "description": "require local configs as if it's node_modules",
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "build": "babel src/config.js --out-file index.js",
+    "build": "babel src/index.js --out-file lib/index.js",
     "prepublishOnly": "npm run build"
   },
   "repository": {
