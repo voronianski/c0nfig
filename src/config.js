@@ -4,8 +4,6 @@ const path = require('path');
 const fileName = `${env}.config.js`;
 const filePath = path.resolve(__dirname, `../../config/${fileName}`);
 
-console.log(1, filePath);
-
 const config = require(filePath);
 
 config.env = env;

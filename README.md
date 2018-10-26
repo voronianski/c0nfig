@@ -26,7 +26,7 @@ development.config.js
 Export some configuration data for every environment like:
 
 ```js
-// development.config.js
+// config/development.config.js
 module.exports = {
   title: 'BLITZKRIEG BOP (STAGING)',
   apiUrl: 'https://staging.example.org/api'
@@ -34,7 +34,7 @@ module.exports = {
 ```
 
 ```js
-// production.config.js
+// config/production.config.js
 module.exports = {
   title: 'BLITZKRIEG BOP (PRODUCTION)',
   apiUrl: 'https://example.org/api'
