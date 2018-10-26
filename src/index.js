@@ -2,9 +2,7 @@ const env = process.env.NODE_ENV || 'development';
 
 const path = require('path');
 const fileName = `${env}.config.js`;
-const filePath = path.resolve(__dirname, `../../config/${fileName}`);
-
-const config = require(`${filePath}`);
+const config = require(`../../../config/${fileName}`);
 
 config.env = env;
 populateEachConfig(config);
