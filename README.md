@@ -1,7 +1,6 @@
 # c0nfig
 
 [![npm version](http://badge.fury.io/js/c0nfig.svg)](http://badge.fury.io/js/c0nfig)
-[![Dependency Status](http://david-dm.org/voronianski/c0nfig.svg)](http://david-dm.org/voronianski/c0nfig)
 
 > Require local environment based configs as if they are in `node_modules`.
 
