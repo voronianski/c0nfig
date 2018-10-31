@@ -53,7 +53,7 @@ request.get(config.apiUrl).then(res => { ... });
 
 ```js
 // src/app.js
-const config = require('c0nfig').default;
+const config = require('c0nfig');
 const request = require('superagent');
 
 request.get(config.apiUrl).then(res => { ... });
